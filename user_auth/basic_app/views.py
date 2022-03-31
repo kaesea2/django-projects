@@ -43,7 +43,7 @@ def reg_form(request):
 
     return render(request, 'basic_app/register.html',context=dict)
 
-def login_form(request):
+def user_login(request):
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
