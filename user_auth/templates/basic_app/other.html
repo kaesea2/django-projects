@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{%extends 'basic_app/base.html'%}
+{%block title%}
+  other page
+{%endblock%}
+{%block body%}
+  <div class="container">
+    <h1>welcome to other page</h1>
+    <h2>you are logged in</h2>
+    <a href="{%url 'basic_app:logout'%}">
+      <button type="button" name="button" class="btn btn-primary">logout</button>
+    </a>
+  </div>
+{%endblock%}
